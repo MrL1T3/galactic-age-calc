@@ -1,3 +1,3 @@
 export default function Mercury (earthYears){
-  this.mercYears = (earthYears * 0.24)
+  this.mercYears = (earthYears * 0.24) 
 }
