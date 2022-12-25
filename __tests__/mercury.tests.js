@@ -11,7 +11,10 @@ describe('Mercury', () => {
     })
     test('should return a string saying the input Earth years and its equivalent in Mercury years.', () => {
       const earthToMercury = new Mercury(1);
-      console.log("bad stuff");
       expect(earthToMercury.mercYearsString).toBe('1 Earth years is equal to 0.24 Mercury years.');
+    })
+    test("should return a string stating the user's input age in Mercury years.", () => {
+      const earthToMercury =new Mercury(15);
+      expect(earthToMercury.mercAge).toBe('You are 3.6 Mercury years old.')
     })
 })
