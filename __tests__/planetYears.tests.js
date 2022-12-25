@@ -13,3 +13,10 @@ describe('planetYears.venusYearsOld', () => {
         expect(venusConvert.venusYearsold(20)).toBe('You are 32.26 Venus years old.');
     });
 });
+
+describe('planetYears.marsYearsOld', () => {
+    test('should return a sentence stating the input age in mars years', () => {
+        const marsConvert = new planetYears(0.24, 0.62, 1.88, 11.86);
+        expect(marsConvert.marsYearsold(20)).toBe('You are 10.64 mars years old.');
+    });
+});
