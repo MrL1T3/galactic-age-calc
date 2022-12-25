@@ -37,7 +37,8 @@ export default class planetYears{
     yearsTill (futureAge) {
         let comingTime = {
             earthYears: 'It will be ' + (futureAge-this.earthAge) + ' Earth years until you are that old.',
-            mercuryYears: 'It will be ' + ((futureAge-this.earthAge)/0.24).toFixed(2) + ' Mercury years until you are that old.'
+            mercuryYears: 'It will be ' + ((futureAge-this.earthAge)/0.24).toFixed(2) + ' Mercury years until you are that old.',
+            venusYears: 'It will be ' + ((futureAge-this.earthAge)/0.62).toFixed(2) + ' Venus years until you are that old.'
         }
         return comingTime;
     }
