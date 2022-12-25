@@ -17,12 +17,12 @@ describe('Mercury', () => {
       const earthToMercury = new Mercury(15);
       expect(earthToMercury.mercAge).toBe('You are 62.50 Mercury years old.');
     }),
-    // test('should return how many years it has been since a given age to the current age of the user', () => {
-    //   const earthToMercury = new Mercury(20, 10);
-    //   expect(earthToMercury.mercYearsSince).toBe('2.4');
-    // })
+    test('should return how many years it has been since a given age to the current age of the user', () => {
+      const earthToMercury = new Mercury(20, 10);
+      expect(earthToMercury.mercYearsSince).toBe('41.67');
+    })
     test('should return the same value as the previous test in a sentence describing the result', () => {
       const earthToMercury = new Mercury(20, 10);
-      expect(earthToMercury.mercYearsSince).toBe('It has been 41.67 Mercury years since you were that old.');
+      expect(earthToMercury.mercYearsSinceString).toBe('It has been 41.67 Mercury years since you were that old.');
     })
 })
