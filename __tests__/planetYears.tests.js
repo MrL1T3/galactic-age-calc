@@ -54,6 +54,6 @@ describe('planetYears.yearsSince', () => {
             console.log(`${key} is ${result[key]}`);
         }
         let marsYears = result.marsYears;
-        expect(marsYears).toEqual('16.13 Mars years have passed.');
+        expect(marsYears).toEqual('5.32 Mars years have passed.');
     });
 })
