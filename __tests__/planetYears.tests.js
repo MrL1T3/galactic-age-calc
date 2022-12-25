@@ -32,19 +32,22 @@ describe('planetYears.yearsSince', () => {
     test("should display the years since the user's input previous age", () => {
         const timeSince = new planetYears(20);
         let result = timeSince.yearsSince(10);
-        for(let key in result) {
-            console.log(`${key} is ${result[key]}`);
-        }
         let earthYears = result.earthYears;
         expect(earthYears).toEqual('10 Earth years have passed.');
     });
     test('should return the years since the previous age on mercury', () => {
         const timeSince = new planetYears(20);
         let result = timeSince.yearsSince(10);
+        let mercuryYears = result.mercuryYears;
+        expect(mercuryYears).toEqual('41.67 Mercury years have passed.');
+    });
+    test('should return the years passed on Venus', () => {
+        const timeSince = new planetYears(20);
+        let result = timeSince.yearsSince(10);
         for(let key in result) {
             console.log(`${key} is ${result[key]}`);
         }
-        let mercuryYears = result.mercuryYears;
-        expect(mercuryYears).toEqual('41.67 Mercury years have passed.');
+        let venusYears = result.venusYears;
+        expect(venusYears).toEqual('16.13 Venus years have passed.')
     })
 })
