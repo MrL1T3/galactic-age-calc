@@ -33,4 +33,8 @@ describe('planetYears.yearsSince', () => {
         const timeSince = new planetYears(20);
         expect(timeSince.yearsSince(10)).toEqual({earthYears:'10 Earth years have passed.'});
     });
+    test('should return the years since the previous age on mercury', () => {
+        const timeSince = new planetYears(20);
+        expect(timeSince.yearsSince(10)).toEqual({mercuryYears:'41.67 Mercury years have passed.'})
+    })
 })
