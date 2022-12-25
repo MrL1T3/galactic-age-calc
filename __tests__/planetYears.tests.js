@@ -27,3 +27,10 @@ describe('planetYears.jupiterYearsOld', () => {
         expect(jupiterConvert.jupiterYearsOld()).toBe('You are 1.69 Jupiter years old.');
     });
 });
+
+describe('planetYears.yearsSince', () => {
+    test("should display the years since the user's input previous age", () => {
+        const timeSince = new planetYears(20);
+        expect(timeSince.yearsSince(10)).toBe('10 Earth years have passed.')
+    })
+})
