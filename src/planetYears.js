@@ -1,6 +1,8 @@
 export default class planetYears{
-    constructor(earthAge){
-        this.earthAge =earthAge
+    constructor(earthAge, previousYears, futureYears){
+        this.earthAge = earthAge;
+        this.previousYears= previousYears;
+        this.futureYears = futureYears;
     }
     mercYearsOld() {
         const mercAge = (this.earthAge / 0.24).toFixed(2);
