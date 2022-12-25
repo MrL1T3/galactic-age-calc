@@ -9,17 +9,17 @@ export default class planetYears{
     }
     venusYearsOld() {
         const venusAge = (this.earthAge / 0.62).toFixed(2);
-        const venusAgeString = 'You are '+venusAge+' Venus years old.'
+        const venusAgeString = 'You are '+venusAge+' Venus years old.';
         return venusAgeString;
     }
     marsYearsOld() {
         const marsAge = (this.earthAge / 1.88).toFixed(2);
-        const marsAgeString = 'You are '+marsAge+' Mars years old.'
+        const marsAgeString = 'You are '+marsAge+' Mars years old.';
         return marsAgeString;
     }
     jupiterYearsOld() {
         const jupiterAge = (this.earthAge / 11.86).toFixed(2);
-        const jupiterAgeString = 'You are ' + jupiterAge + ' Jupiter years old.'
+        const jupiterAgeString = 'You are ' + jupiterAge + ' Jupiter years old.';
         return jupiterAgeString;
     }
     yearsSince (previousAge) {
