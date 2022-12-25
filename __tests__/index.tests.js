@@ -12,8 +12,11 @@ describe('spaceCalc', () => {
         console.log(spaceCalc(20, 10, 35));
         expect(spaceCalc(20, 10, 35)).toEqual(['You are 83.33 Mercury years old.','You are 32.26 Venus years old.','You are 10.64 Mars years old.','You are 1.69 Jupiter years old.']);
     }),
-    test("should return how longi ts been pn earth in an array", () => {
+    test.skip("should return how long its been on earth in an array", () => {
         expect(spaceCalc(20, 10, 35)).toContain('10 Earth years have passed.')
+    }),
+    test("should return how long its been on mercury in an array", () => {
+        expect(spaceCalc(20, 10, 35)).toContain('41.67 Mercury years have passed.')
     })
 });
 
