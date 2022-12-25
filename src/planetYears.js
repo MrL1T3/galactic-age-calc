@@ -26,7 +26,8 @@ export default class planetYears{
 
     yearsSince (previousAge) {
         let temp = {
-            earthYears: (this.earthAge-previousAge) + ' Earth years have passed.'
+            earthYears: (this.earthAge-previousAge) + ' Earth years have passed.',
+            mercuryYears: ((this.earthAge-previousAge) / 0.24).toFixed(2) + ' Mercury years have passed.'
         };
         return temp;
     }
