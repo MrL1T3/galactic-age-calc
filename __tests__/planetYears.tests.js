@@ -31,6 +31,6 @@ describe('planetYears.jupiterYearsOld', () => {
 describe('planetYears.yearsSince', () => {
     test("should display the years since the user's input previous age", () => {
         const timeSince = new planetYears(20);
-        expect(timeSince.yearsSince(10)).toBe('10 Earth years have passed.')
-    })
+        expect(timeSince.yearsSince(10)).toEqual({earthYears:'10 Earth years have passed.'});
+    });
 })
