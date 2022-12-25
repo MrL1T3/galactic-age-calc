@@ -68,10 +68,16 @@ describe('planetYears.YearsTill', () => {
         let earthYears = result.earthYears;
         expect(earthYears).toEqual('It will be 5 Earth years until you are that old.')
     }),
-    test('should return the years until a future age on Mercury', () => {
+    test.skip('should return the years until a future age on Mercury', () => {
         const timeTill = new planetYears(15);
         let result = timeTill.yearsTill(20);
         let mercuryYears = result.mercuryYears;
         expect(mercuryYears).toEqual('It will be 20.83 Mercury years until you are that old.')
+    }),
+    test('should return the years until a future age on Venus', () => {
+        const timeTill = new planetYears(15);
+        let result = timeTill.yearsTill(20);
+        let venusYears = result.venusYears;
+        expect(venusYears).toEqual('It will be 8.06 Venus years until you are that old.')
     })
 })
