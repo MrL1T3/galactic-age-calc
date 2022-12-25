@@ -44,10 +44,16 @@ describe('planetYears.yearsSince', () => {
     test('should return the years passed on Venus', () => {
         const timeSince = new planetYears(20);
         let result = timeSince.yearsSince(10);
+        let venusYears = result.venusYears;
+        expect(venusYears).toEqual('16.13 Venus years have passed.');
+    });
+    test('should return the years passed on Mars', () => {
+        const timeSince = new planetYears(20);
+        let result = timeSince.yearsSince(10);
         for(let key in result) {
             console.log(`${key} is ${result[key]}`);
         }
-        let venusYears = result.venusYears;
-        expect(venusYears).toEqual('16.13 Venus years have passed.')
-    })
+        let marsYears = result.marsYears;
+        expect(marsYears).toEqual('16.13 Mars years have passed.');
+    });
 })
