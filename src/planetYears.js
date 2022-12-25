@@ -17,4 +17,9 @@ export default class planetYears{
         const marsAgeString = 'You are ' + marsAge + ' Mars years old.'
         return marsAgeString;
     }
+    jupiterYearsold() {
+        const jupiterAge = (this.earthAge / 11.86).toFixed(2);
+        const jupiterAgeString = 'You are ' + jupiterAge + ' Jupiter years old.'
+        return jupiterAgeString;
+    }
 }
