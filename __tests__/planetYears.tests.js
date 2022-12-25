@@ -45,6 +45,6 @@ describe('planetYears.yearsSince', () => {
             console.log(`${key} is ${result[key]}`);
         }
         let mercuryYears = result.mercuryYears;
-        expect(mercuryYears).toEqual('41.67 MErcury years have passed.');
+        expect(mercuryYears).toEqual('41.67 Mercury years have passed.');
     })
 })
