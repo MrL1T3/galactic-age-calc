@@ -1,7 +1,6 @@
 export default class planetYears{
-    constructor(earthAge, previousYears, futureYears){
+    constructor(earthAge, futureYears){
         this.earthAge = earthAge;
-        this.previousYears= previousYears;
         this.futureYears = futureYears;
     }
     mercYearsOld() {
@@ -23,5 +22,12 @@ export default class planetYears{
         const jupiterAge = (this.earthAge / 11.86).toFixed(2);
         const jupiterAgeString = 'You are ' + jupiterAge + ' Jupiter years old.'
         return jupiterAgeString;
+    }
+
+    yearsSince (previousAge) {
+        let temp = {
+            earthYears: (this.earthAge-previousAge) + ' Earth years have passed.'
+        };
+        return temp;
     }
 }
