@@ -40,5 +40,11 @@ describe('planetYears.yearsSince', () => {
     });
     test('should return the years since the previous age on mercury', () => {
         const timeSince = new planetYears(20);
+        let result = timeSince.yearsSince(10);
+        for(let key in result) {
+            console.log(`${key} is ${result[key]}`);
+        }
+        let mercuryYears = result.mercuryYears;
+        expect(mercuryYears).toEqual('41.67 MErcury years have passed.');
     })
 })
