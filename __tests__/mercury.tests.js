@@ -21,4 +21,8 @@ describe('Mercury', () => {
       const earthToMercury = new Mercury(20, 10);
       expect(earthToMercury.mercYearsSince).toBe('2.4');
     })
+    test('should return the same value as the previous test in a sentence describing the result', () => {
+      const earthToMercury = new Mercury(20, 10);
+      expect(earthToMercury.mercYearsSince).toBe('It has been 2.4 Mercury years since you were that old.');
+    })
 })
