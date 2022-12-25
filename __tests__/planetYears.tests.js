@@ -60,3 +60,12 @@ describe('planetYears.yearsSince', () => {
         expect(jupiterYears).toEqual('0.84 Jupiter years have passed.');
     });
 })
+
+describe('planetYears.YearsTill', () => {
+    test('should return the years until a future age on Earth', () => {
+        const timeTill = new planetYears(15);
+        let result = timeTill.yearsTill(20);
+        let earthYears = result.earthYears;
+        expect(earthYears).toEqual('It will be 5 Earth years until you are that old.')
+    })
+})
