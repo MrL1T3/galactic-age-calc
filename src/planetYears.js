@@ -29,7 +29,8 @@ export default class planetYears{
             earthYears: (this.earthAge-previousAge) + ' Earth years have passed.',
             mercuryYears: ((this.earthAge-previousAge) / 0.24).toFixed(2) + ' Mercury years have passed.',
             venusYears: ((this.earthAge-previousAge) / 0.62).toFixed(2) + ' Venus years have passed.',
-            marsYears: ((this.earthAge-previousAge) / 1.88).toFixed(2) + ' Mars years have passed.'
+            marsYears: ((this.earthAge-previousAge) / 1.88).toFixed(2) + ' Mars years have passed.',
+            jupiterYears: ((this.earthAge-previousAge) / 11.86).toFixed(2) + ' Jupiter years have passed.'
         };
         return temp;
     }
