@@ -79,7 +79,7 @@ describe('planetYears.YearsTill', () => {
         let result = timeTill.yearsTill(20);
         let venusYears = result.venusYears;
         expect(venusYears).toEqual('It will be 8.06 Venus years until you are that old.')
-    }).
+    }),
     test('should return the years until a future age on Mars', () => {
         const timeTill = new planetYears(15);
         let result = timeTill.yearsTill(20);
