@@ -19,6 +19,6 @@ describe('Mercury', () => {
     }),
     test('should return how many years it has been since a given age to the current age of the user', () => {
       const earthToMercury = new Mercury(20, 10);
-      expect(earthToMercury.mercYearsSince).toBe(2.4);
+      expect(earthToMercury.mercYearsSince).toBe('2.4');
     })
 })
