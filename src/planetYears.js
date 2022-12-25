@@ -9,12 +9,12 @@ export default class planetYears{
         const mercAgeString = 'You are ' + mercAge + ' Mercury years old.'
         return mercAgeString;
     }
-    venusYearsold() {
+    venusYearsOld() {
         const venusAge = (this.earthAge / 0.62).toFixed(2);
         const venusAgeString = 'You are ' + venusAge + ' Venus years old.'
         return venusAgeString;
     }
-    marsYearsold() {
+    marsYearsOld() {
         const marsAge = (this.earthAge / 1.88).toFixed(2);
         const marsAgeString = 'You are ' + marsAge + ' Mars years old.'
         return marsAgeString;

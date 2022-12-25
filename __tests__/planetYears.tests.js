@@ -10,20 +10,20 @@ describe('planetYears.mercYearsOld', () => {
 describe('planetYears.venusYearsOld', () => {
     test('should return a sentence stating the input age in venus years', () => {
         const venusConvert = new planetYears(20);
-        expect(venusConvert.venusYearsold()).toBe('You are 32.26 Venus years old.');
+        expect(venusConvert.venusYearsOld()).toBe('You are 32.26 Venus years old.');
     }).skip;
 });
 
 describe('planetYears.marsYearsOld', () => {
     test('should return a sentence stating the input age in mars years', () => {
         const marsConvert = new planetYears(20);
-        expect(marsConvert.marsYearsold()).toBe('You are 10.64 Mars years old.');
+        expect(marsConvert.marsYearsOld()).toBe('You are 10.64 Mars years old.');
     }).skip;
 });
 
 describe('planetYears.jupiterYearsOld', () => {
     test('should return a sentence stating the input age in jupiter years', () => {
         const jupiterConvert = new planetYears(20);
-        expect(jupiterConvert.jupiterYearsold()).toBe('You are 1.69 Jupiter years old.');
+        expect(jupiterConvert.jupiterYearOold()).toBe('You are 1.69 Jupiter years old.');
     });
 });
