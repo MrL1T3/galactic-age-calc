@@ -24,6 +24,6 @@ describe('planetYears.marsYearsOld', () => {
 describe('planetYears.jupiterYearsOld', () => {
     test('should return a sentence stating the input age in jupiter years', () => {
         const jupiterConvert = new planetYears(20);
-        expect(jupiterConvert.jupiterYearsold()).toBe('You are 10.64 Jupiter years old.');
+        expect(jupiterConvert.jupiterYearsold()).toBe('You are 1.69 Jupiter years old.');
     });
 });
