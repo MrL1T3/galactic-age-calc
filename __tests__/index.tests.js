@@ -1,5 +1,4 @@
 import spaceCalc from "../src/index.js";
-
 describe('spaceCalc', () => {
     test.skip('should return the input earthAge in jupiter years', () => {
         expect(spaceCalc(20, 10, 35)).toContain('You are 1.69 Jupiter years old.')
