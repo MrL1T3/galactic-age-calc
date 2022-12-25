@@ -11,7 +11,7 @@ export default function spaceCalc(earthAge, previousAge, futureAge) {
     ageArray.push(spaceYears.jupiterYearsOld(earthAge));
     console.log(ageArray);
     let result = spaceYears.yearsSince(10);
-    timeSinceArray.push(result.earthYears);
+    timeSinceArray.push(result.earthYears, result.mercuryYears);
     console.log(timeSinceArray);
     return timeSinceArray;
 }
