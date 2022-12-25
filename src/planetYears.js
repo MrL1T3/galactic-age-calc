@@ -15,4 +15,9 @@ export default class planetYears{
         const venusAgeString = 'You are ' + venusAge + ' Venus years old.'
         return venusAgeString;
     }
+    marsYearsold(earthAge) {
+        const marsAge = (earthAge / this.marsYearConvert).toFixed(2);
+        const marsAgeString = 'You are ' + marsAge + ' Mars years old.'
+        return marsAgeString;
+    }
 }
