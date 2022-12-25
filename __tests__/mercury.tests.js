@@ -28,5 +28,5 @@ describe('Mercury', () => {
     test("should return a string of the number of years until a selcted age, given the current user's age", () => {
       const earthToMercury = new Mercury(20, 10, 35);
       expect(earthToMercury.mercYearsUntil).toBe('62.50');
-    })
+    }),
 })
