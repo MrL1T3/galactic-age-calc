@@ -26,17 +26,18 @@ export default class planetYears{
     yearsSince (previousAge) {
         let passedTime = {
             earthYears: (this.earthAge-previousAge) + ' Earth years have passed.',
-            mercuryYears: ((this.earthAge-previousAge) / 0.24).toFixed(2) + ' Mercury years have passed.',
-            venusYears: ((this.earthAge-previousAge) / 0.62).toFixed(2) + ' Venus years have passed.',
-            marsYears: ((this.earthAge-previousAge) / 1.88).toFixed(2) + ' Mars years have passed.',
-            jupiterYears: ((this.earthAge-previousAge) / 11.86).toFixed(2) + ' Jupiter years have passed.'
+            mercuryYears: ((this.earthAge-previousAge)/0.24).toFixed(2) + ' Mercury years have passed.',
+            venusYears: ((this.earthAge-previousAge)/0.62).toFixed(2) + ' Venus years have passed.',
+            marsYears: ((this.earthAge-previousAge)/1.88).toFixed(2) + ' Mars years have passed.',
+            jupiterYears: ((this.earthAge-previousAge)/11.86).toFixed(2) + ' Jupiter years have passed.'
         };
         return passedTime;
     }
 
     yearsTill (futureAge) {
         let comingTime = {
-            earthYears: 'It will be ' + (futureAge-this.earthAge) + ' Earth years until you are that old.'
+            earthYears: 'It will be ' + (futureAge-this.earthAge) + ' Earth years until you are that old.',
+            mercuryYears: 'It will be ' + ((futureAge-this.earthAge)/0.24).toFixed(2) + ' Mercury years until you are that old.'
         }
         return comingTime;
     }
