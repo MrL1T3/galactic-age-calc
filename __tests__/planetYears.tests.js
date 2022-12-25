@@ -71,7 +71,7 @@ describe('planetYears.YearsTill', () => {
     test('should return the years until a future age on Mercury', () => {
         const timeTill = new planetYears(15);
         let result = timeTill.yearsTill(20);
-        let earthYears = result.mercuryYears;
+        let mercuryYears = result.mercuryYears;
         expect(mercuryYears).toEqual('It will be 20.83 Mercury years until you are that old.')
     })
 })
