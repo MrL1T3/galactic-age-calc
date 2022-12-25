@@ -20,9 +20,13 @@ describe('Mercury', () => {
     test('should return how many years it has been since a given age to the current age of the user', () => {
       const earthToMercury = new Mercury(20, 10);
       expect(earthToMercury.mercYearsSince).toBe('41.67');
-    })
+    }),
     test('should return the same value as the previous test in a sentence describing the result', () => {
       const earthToMercury = new Mercury(20, 10);
       expect(earthToMercury.mercYearsSinceString).toBe('It has been 41.67 Mercury years since you were that old.');
+    }),
+    test("should return a string of the number of years until a selcted age, given the current user's age", () => {
+      const earthToMercury = new Mercury(20, 10, 35);
+      expect(earthToMercury.mercYearsUntil).toBe('62.50');
     })
 })
