@@ -1,22 +1,19 @@
 export default class planetYears{
-    constructor(mercYearConvert, venusYearConvert, marsYearConvert, jupiterYearconvert){
-        this.mercYearConvert = mercYearConvert;
-        this.venusYearConvert = venusYearConvert;
-        this.marsYearConvert = marsYearConvert;
-        this.jupiterYearconvert = jupiterYearconvert;
+    constructor(earthAge){
+        this.earthAge =earthAge
     }
-    mercYearsOld(earthAge) {
-        const mercAge = (earthAge / this.mercYearConvert).toFixed(2);
+    mercYearsOld() {
+        const mercAge = (this.earthAge / 0.24).toFixed(2);
         const mercAgeString = 'You are ' + mercAge + ' Mercury years old.'
         return mercAgeString;
     }
-    venusYearsold(earthAge) {
-        const venusAge = (earthAge / this.venusYearConvert).toFixed(2);
+    venusYearsold() {
+        const venusAge = (this.earthAge / 0.62).toFixed(2);
         const venusAgeString = 'You are ' + venusAge + ' Venus years old.'
         return venusAgeString;
     }
-    marsYearsold(earthAge) {
-        const marsAge = (earthAge / this.marsYearConvert).toFixed(2);
+    marsYearsold() {
+        const marsAge = (this.earthAge / 1.88).toFixed(2);
         const marsAgeString = 'You are ' + marsAge + ' Mars years old.'
         return marsAgeString;
     }
