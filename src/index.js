@@ -6,7 +6,6 @@ export function spaceCalc(earthAge, previousAge, futureAge) {
     let timeSinceArray = [];
     let timeTillArray = [];
     ageArray.push(spaceYears.mercYearsOld(earthAge),spaceYears.venusYearsOld(earthAge),spaceYears.marsYearsOld(earthAge),spaceYears.jupiterYearsOld(earthAge));
-    console.log(ageArray);
     const elementAge = document.createElement('div');
     let resultAge = `Results are ${JSON.stringify(timeTillArray)}`;
     let textAge = document.createTextNode(resultAge);
@@ -28,7 +27,6 @@ export function spaceCalc(earthAge, previousAge, futureAge) {
     return ageArray;
 }
 function getResult() {
-    console.log("in main");
     let results = spaceCalc(45, 39, 52);
     const element = document.createElement('div-future');
     let resultStr = `Results are ${JSON.stringify(results)}`;
@@ -40,4 +38,3 @@ function main() {
     document.body.appendChild(getResult());
 }
 main();
-console.log('anything happen?');
