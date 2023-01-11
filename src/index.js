@@ -12,14 +12,12 @@ export function spaceCalc(earthAge, previousAge, futureAge) {
   elementAge.appendChild(textAge);
   let pastResult = spaceYears.yearsSince(previousAge);
   timeSinceArray.push(pastResult.earthYears, pastResult.mercuryYears, pastResult.venusYears, pastResult.marsYears, pastResult.jupiterYears);
-  console.log(timeSinceArray);
   const elementPast = document.createElement('div-age');
   let resultPast = `Results are ${JSON.stringify(timeSinceArray)}`;
   let textPast = document.createTextNode(resultPast);
   elementPast.appendChild(textPast);
   let futureResult = spaceYears.yearsTill(futureAge);
   timeTillArray.push(futureResult.earthYears, futureResult.mercuryYears, futureResult.venusYears, futureResult.marsYears, futureResult.jupiterYears);
-  console.log(timeTillArray)
   const elementFuture = document.createElement('div-past');
   let resultFuture = `Results are ${JSON.stringify(timeTillArray)}`;
   let textFuture = document.createTextNode(resultFuture);
