@@ -4,7 +4,7 @@ export default class planetYears{
   }
   mercYearsOld() {
     const mercAge = (this.earthAge / 0.24).toFixed(2);
-    const mercAgeString = 'You are '+mercAge+' Mercury years old.'
+    const mercAgeString = 'You are '+mercAge+' Mercury years old.';
     return mercAgeString;
   }
   venusYearsOld() {
@@ -39,7 +39,7 @@ export default class planetYears{
       venusYears: 'It will be '+((futureAge-this.earthAge)/0.62).toFixed(2)+' Venus years until you are that old.',
       marsYears: 'It will be '+((futureAge-this.earthAge)/1.88).toFixed(2)+' Mars years until you are that old.',
       jupiterYears: 'It will be '+((futureAge-this.earthAge)/11.86).toFixed(2)+' Jupiter years until you are that old.'
-    }
+    };
     return comingTime;
   }
 }
